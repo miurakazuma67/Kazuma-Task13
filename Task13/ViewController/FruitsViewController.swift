@@ -7,13 +7,16 @@
 
 import UIKit
 
-class FruitsViewController: UIViewController {
+final class FruitsViewController: UIViewController {
 
-    
     @IBOutlet private weak var fruitsTableView: UITableView!
+    
+    var fruitsModel = FruitsModel()
+    private let fruits: [String] = [fruitsModel]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        // MARK: TableView + Cell
         fruitsTableView.delegate = self
         fruitsTableView.dataSource = self
         fruitsTableView.registerCustomCell(FruitsTableViewCell.self)

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FruitsTableViewCell: UITableViewCell {
+final class FruitsTableViewCell: UITableViewCell {
     
     @IBOutlet private weak var checkImage: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!

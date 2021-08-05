@@ -7,4 +7,11 @@
 
 import Foundation
 
+//protocolかく
 
+struct FruitsModel {
+    let apple = "りんご"
+    let mikan = "みかん"
+    let banana = "バナナ"
+    let pineapple = "パイナップル"
+}
