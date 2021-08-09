@@ -8,10 +8,17 @@
 import Foundation
 
 //protocolかく
-
-struct FruitsModel {
-    let apple = "りんご"
-    let mikan = "みかん"
-    let banana = "バナナ"
-    let pineapple = "パイナップル"
+protocol FruitsModelDelegate: AnyObject {
+    func setModel()
 }
+
+final class FruitsModel {
+    weak var delegate: FruitsModelDelegate?
+    let fruits = ["りんご", "みかん", "バナナ", "パイナップル"]
+    
+    func set(fruits: [String]) {
+        delegate?.setModel()
+    }
+}
+
+

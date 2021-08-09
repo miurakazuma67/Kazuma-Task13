@@ -21,6 +21,7 @@
 		A4726C1026B950CC00ABA5E9 /* NSObjectProtocol + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4726C0F26B950CC00ABA5E9 /* NSObjectProtocol + Extension.swift */; };
 		A4726C1826B950F700ABA5E9 /* UITableViewCell + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4726C1726B950F700ABA5E9 /* UITableViewCell + Extension.swift */; };
 		A4726C1D26B9511100ABA5E9 /* UITableView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4726C1C26B9511100ABA5E9 /* UITableView + Extension.swift */; };
+		A4EEF71626BD30AD0058F9C3 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = A4EEF71526BD30AD0058F9C3 /* checkmark.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		A4726C0F26B950CC00ABA5E9 /* NSObjectProtocol + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObjectProtocol + Extension.swift"; sourceTree = "<group>"; };
 		A4726C1726B950F700ABA5E9 /* UITableViewCell + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell + Extension.swift"; sourceTree = "<group>"; };
 		A4726C1C26B9511100ABA5E9 /* UITableView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView + Extension.swift"; sourceTree = "<group>"; };
+		A4EEF71526BD30AD0058F9C3 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				A4726C2C26B959C600ABA5E9 /* Storyboard */,
 				A4726C0726B94FB100ABA5E9 /* Cells */,
 				A4726BCC26B9453400ABA5E9 /* Assets.xcassets */,
+				A4EEF71526BD30AD0058F9C3 /* checkmark.png */,
 				A4726BCE26B9453400ABA5E9 /* LaunchScreen.storyboard */,
 				A4726BD126B9453400ABA5E9 /* Info.plist */,
 			);
@@ -290,6 +293,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4726C0126B945FC00ABA5E9 /* FruitsTableViewCell.xib in Resources */,
+				A4EEF71626BD30AD0058F9C3 /* checkmark.png in Resources */,
 				A4726BD026B9453400ABA5E9 /* LaunchScreen.storyboard in Resources */,
 				A4726BCD26B9453400ABA5E9 /* Assets.xcassets in Resources */,
 				A4726BCB26B9453100ABA5E9 /* Fruits.storyboard in Resources */,
