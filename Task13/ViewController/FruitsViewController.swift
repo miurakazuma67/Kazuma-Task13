@@ -8,11 +8,11 @@
 import UIKit
 
 final class FruitsViewController: UIViewController {
-
+    
     @IBOutlet private weak var fruitsTableView: UITableView!
     
     let fruitsModel = FruitsModel()
-    private var fruits: [String] = []
+    private var fruits: [Fruit] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,23 +23,21 @@ final class FruitsViewController: UIViewController {
         fruitsModel.delegate = self
         setModel()
     }
-
+    
 }
 
 extension FruitsViewController: UITableViewDelegate {
-
 }
 
 extension FruitsViewController: UITableViewDataSource {
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return fruits.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCustomCell(with: FruitsTableViewCell.self)
-        //cellに名前を登録する
-        cell.configure(name: fruits[indexPath.row])
+        cell.configure(fruits: fruits[indexPath.row])
         return cell
     }
 }
@@ -49,6 +47,4 @@ extension FruitsViewController: FruitsModelDelegate {
         self.fruits = fruitsModel.fruits
     }
     
-    func check(index: Int) {
-    }
 }

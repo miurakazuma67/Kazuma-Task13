@@ -12,8 +12,11 @@ final class FruitsTableViewCell: UITableViewCell {
     @IBOutlet private weak var checkImage: UIImageView!
     @IBOutlet private weak var nameLabel: UILabel!
     
-    func configure(name: String) {
-        nameLabel.text = name
+    func configure(fruits: Fruit) {
+        nameLabel.text = fruits.name
+        if fruits.isChecked == true {
+            self.checkImage.image = UIImage(named: "checkmark.png")
+        } else { return }
     }
     
 }

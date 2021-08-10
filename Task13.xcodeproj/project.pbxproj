@@ -21,6 +21,7 @@
 		A4726C1026B950CC00ABA5E9 /* NSObjectProtocol + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4726C0F26B950CC00ABA5E9 /* NSObjectProtocol + Extension.swift */; };
 		A4726C1826B950F700ABA5E9 /* UITableViewCell + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4726C1726B950F700ABA5E9 /* UITableViewCell + Extension.swift */; };
 		A4726C1D26B9511100ABA5E9 /* UITableView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4726C1C26B9511100ABA5E9 /* UITableView + Extension.swift */; };
+		A47D93F226C2459700E2FE97 /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47D93F126C2459700E2FE97 /* Fruit.swift */; };
 		A4EEF71626BD30AD0058F9C3 /* checkmark.png in Resources */ = {isa = PBXBuildFile; fileRef = A4EEF71526BD30AD0058F9C3 /* checkmark.png */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		A4726C0F26B950CC00ABA5E9 /* NSObjectProtocol + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObjectProtocol + Extension.swift"; sourceTree = "<group>"; };
 		A4726C1726B950F700ABA5E9 /* UITableViewCell + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell + Extension.swift"; sourceTree = "<group>"; };
 		A4726C1C26B9511100ABA5E9 /* UITableView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView + Extension.swift"; sourceTree = "<group>"; };
+		A47D93F126C2459700E2FE97 /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		A4EEF71526BD30AD0058F9C3 /* checkmark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkmark.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -115,7 +117,7 @@
 			children = (
 				A4726BC326B9453100ABA5E9 /* AppDelegate.swift */,
 				A4726BC526B9453100ABA5E9 /* SceneDelegate.swift */,
-				A4726C2726B9599100ABA5E9 /* Model */,
+				A4726C2726B9599100ABA5E9 /* Models */,
 				A4726C0E26B9509F00ABA5E9 /* Extensions */,
 				A4726C2B26B959AF00ABA5E9 /* ViewController */,
 				A4726C2C26B959C600ABA5E9 /* Storyboard */,
@@ -165,12 +167,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		A4726C2726B9599100ABA5E9 /* Model */ = {
+		A4726C2726B9599100ABA5E9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				A4726BF626B945D400ABA5E9 /* FruitsModel.swift */,
+				A47D93F126C2459700E2FE97 /* Fruit.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A4726C2B26B959AF00ABA5E9 /* ViewController */ = {
@@ -324,6 +327,7 @@
 				A4726BC826B9453100ABA5E9 /* FruitsViewController.swift in Sources */,
 				A4726C1D26B9511100ABA5E9 /* UITableView + Extension.swift in Sources */,
 				A4726C1826B950F700ABA5E9 /* UITableViewCell + Extension.swift in Sources */,
+				A47D93F226C2459700E2FE97 /* Fruit.swift in Sources */,
 				A4726BC426B9453100ABA5E9 /* AppDelegate.swift in Sources */,
 				A4726BF726B945D400ABA5E9 /* FruitsModel.swift in Sources */,
 				A4726C0026B945FC00ABA5E9 /* FruitsTableViewCell.swift in Sources */,
