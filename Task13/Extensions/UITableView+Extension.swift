@@ -7,6 +7,22 @@
 
 import UIKit
 
+private extension UITableViewCell {
+
+    static var identifier: String {
+        return className
+    }
+
+}
+
+private extension NSObjectProtocol {
+
+    static var className: String {
+        return String(describing: self)
+    }
+
+}
+
 extension UITableView {
 
     func registerCustomCell<T: UITableViewCell>(_ cellType: T.Type) {

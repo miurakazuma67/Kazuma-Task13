@@ -14,9 +14,11 @@ final class FruitsTableViewCell: UITableViewCell {
     
     func configure(fruits: Fruit) {
         nameLabel.text = fruits.name
-        if fruits.isChecked == true {
-            self.checkImage.image = UIImage(named: "checkmark.png")
-        } else { return }
+        if fruits.isChecked {
+            checkImage.image = UIImage(named: "checkmark.png")
+        } else {
+            checkImage.image = nil
+        }
     }
     
 }

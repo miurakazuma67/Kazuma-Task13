@@ -12,39 +12,25 @@ final class FruitsViewController: UIViewController {
     @IBOutlet private weak var fruitsTableView: UITableView!
     
     let fruitsModel = FruitsModel()
-    private var fruits: [Fruit] = []
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // MARK: TableView + Cell
-        fruitsTableView.delegate = self
         fruitsTableView.dataSource = self
         fruitsTableView.registerCustomCell(FruitsTableViewCell.self)
-        fruitsModel.delegate = self
-        setModel()
     }
     
-}
-
-extension FruitsViewController: UITableViewDelegate {
 }
 
 extension FruitsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return fruits.count
+        return fruitsModel.fruits.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCustomCell(with: FruitsTableViewCell.self)
-        cell.configure(fruits: fruits[indexPath.row])
+        cell.configure(fruits: fruitsModel.fruits[indexPath.row])
         return cell
     }
-}
-
-extension FruitsViewController: FruitsModelDelegate {
-    func setModel() {
-        self.fruits = fruitsModel.fruits
-    }
-    
 }
