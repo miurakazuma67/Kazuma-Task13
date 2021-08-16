@@ -16,7 +16,9 @@ final class FruitsTableViewCell: UITableViewCell {
         nameLabel.text = fruits.name
         if fruits.isChecked == true {
             self.checkImage.image = UIImage(named: "checkmark.png")
-        } else { return }
+        } else {
+            checkImage.image = nil
+        }
     }
     
 }

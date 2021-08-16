@@ -7,23 +7,23 @@
 
 import Foundation
 
-//protocolかく
-protocol FruitsModelDelegate: AnyObject {
-    func setModel()
-}
+//現段階で外部に通知すべき変化はないので FruitsModelDelegate は削除
+//protocol FruitsModelDelegate: AnyObject {
+//    func setModel()
+//}
 
 final class FruitsModel {
-    weak var delegate: FruitsModelDelegate?
     let fruits: [Fruit] = [
         Fruit(name: "りんご", isChecked: true),
         Fruit(name: "みかん", isChecked: false),
         Fruit(name: "バナナ", isChecked: true),
         Fruit(name: "パイナップル", isChecked: false)
     ]
-    
-    func set(fruits: [Fruit]) {
-        delegate?.setModel()
-    }
+  
+//set という名前だがプロパティに何も変化を与えず、外部に通知をしているだけなので、意味がないので削除
+//    func set(fruits: [Fruit]) {
+//        delegate?.setModel()
+//    }
 }
 
 
