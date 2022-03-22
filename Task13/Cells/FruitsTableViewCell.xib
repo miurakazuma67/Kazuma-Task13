@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -40,10 +41,21 @@
                             <constraint firstAttribute="height" constant="40" id="Mtr-Rn-75e"/>
                         </constraints>
                     </stackView>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Dl-R9-O9t">
+                        <rect key="frame" x="184" y="11" width="97" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="mcm-jg-bgo"/>
+                            <constraint firstAttribute="width" constant="97" id="w03-vm-uao"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
                 </subviews>
                 <constraints>
                     <constraint firstItem="Qgl-1g-ZO6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Dcg-2c-8aj"/>
+                    <constraint firstItem="8Dl-R9-O9t" firstAttribute="leading" secondItem="Qgl-1g-ZO6" secondAttribute="trailing" constant="44" id="Fqd-S4-O4F"/>
                     <constraint firstItem="Qgl-1g-ZO6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ff6-Vt-rbE"/>
+                    <constraint firstItem="8Dl-R9-O9t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="pQ7-hh-NMU"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

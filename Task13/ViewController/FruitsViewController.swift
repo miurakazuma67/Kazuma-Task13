@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 final class FruitsViewController: UIViewController {
     
@@ -21,7 +22,6 @@ final class FruitsViewController: UIViewController {
         fruitsTableView.dataSource = self
         fruitsTableView.registerCustomCell(FruitsTableViewCell.self)
     }
-    
 }
 
 extension FruitsViewController: UITableViewDataSource {
@@ -32,6 +32,9 @@ extension FruitsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCustomCell(with: FruitsTableViewCell.self)
+        //関数を呼び出すときにmodelごと渡す
+        //そうすることで、cellがやることが表示をすることだけにできる
+        //cell.label.text = "hoge"みたいにすると、cellに表示するものが増えた場合に書く量が増えてしまうので、Bad
         cell.configure(fruits: fruitsModel.fruits[indexPath.row])
         return cell
     }

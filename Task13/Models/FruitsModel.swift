@@ -17,6 +17,10 @@ final class FruitsModel {
         Fruit(name: "りんご", isChecked: true),
         Fruit(name: "みかん", isChecked: false),
         Fruit(name: "バナナ", isChecked: true),
+        Fruit(name: "パイナップル", isChecked: false),
+        Fruit(name: "りんご", isChecked: true),
+        Fruit(name: "みかん", isChecked: false),
+        Fruit(name: "バナナ", isChecked: true),
         Fruit(name: "パイナップル", isChecked: false)
     ]
   
